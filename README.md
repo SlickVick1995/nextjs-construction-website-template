@@ -18,7 +18,6 @@
 <h2>🔗 Live Preview & Download</h2>
 <ul>
   <li>🚀 <a href="https://themixly.com/preview/192/construction-company-react-nextjs-template" target="_blank"> Live Demo – Buildify Template</a></li>
-  <li>🛒 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank"> Buy Full Version – Pro Template on Themixly</a></li>
   <li>📦 <a href="https://github.com/themixlyweb/nextjs-construction-website-template" target="_blank"> Download from GitHub (Free)</a></li>
 </ul>
 
@@ -42,7 +41,7 @@
   </tbody>
 </table>
 
-<h3>👉 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank"> Upgrade to Full Version</a></h3>
+<h3>👉 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank"> Upgrade to the Pro Version</a></h3>
 
 <h2>🧠 Template Use Cases</h2>
 <p>This construction website template is ideal for:</p>
@@ -75,7 +74,7 @@
   <img src="https://themixly.com/wp-content/uploads/2025/06/Buildify-Product-Detail-1-scaled.png" alt="Buildify Responsive Layout">
 </figure>
 
-<h2>✨ WWhy Choose Buildify?</h2>
+<h2>✨ Why Choose Buildify?</h2>
 <ul>
   <li>Built for speed and performance with minimal dependencies</li>
   <li>Construction-focused layout with pre-designed UI blocks</li>
@@ -127,7 +126,7 @@ npm run build     # Build for production</code></pre>
   <li>✅ React, JSX, and HTML structure</li>
 </ul>
 <p>🔒 Full features like multi-page layout, appointment form, treatment details, and more are available in the premium version.</p>
-<p>👉 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank">Buy Full Version on Themixly →</a></p>
+<p>👉 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank">Grab the Full Package on Themixly →</a></p>
 
 <h2>📝 License</h2>
 <p>This template is licensed under the <a href="https://github.com/themixlyweb/nextjs-construction-website-template/blob/main/LICENSE" target="_blank">MIT License</a>.<br>
@@ -138,14 +137,11 @@ You may use this version for personal and educational purposes.<br>
 <ul>
   <li>⭐ Star this repo if you find it useful</li>
   <li>Share with your developers or construction business owners</li>
-  <li>Want full features & commercial license?</li>
-  <li>👉 Buy the Full Template on <a href="https://themixly.com/themes/construction-company-react-nextjs-template" target="_blank">Themixly</a></li>
 </ul>
 
 <h2>🔗 Other Templates You May Like</h2>
 <ul>
   <li>🦴 <a href="https://themixly.com/themes/react-restaurant-cafe-one-page-template/" target="_blank">RestoOne – Restaurant One Page </a></li>
-  <li>✈️ <a href="https://themixly.com/themes/hr-consultancy-react-nextjs-template/" target="_blank">HRMate – HR Consultancy </a></li>
   <li>🏗 <a href="https://themixly.com/themes/law-firm-attorney-react-template/" target="_blank">LawEdge – Law Firm Website</a></li>
 </ul>
 
@@ -155,16 +151,10 @@ You may use this version for personal and educational purposes.<br>
 <p>
   Need support or custom development?<br>
   📩 <a href="https://themixly.com/contact-us/" target="_blank">Contact Themixly Team</a><br>
-  🔗 Follow us:
-  <a href="https://www.facebook.com/profile.php?id=61576748155161" target="_blank">Facebook</a> |
-  <a href="https://www.instagram.com/themixly/" target="_blank">Instagram</a> |
-  <a href="https://www.linkedin.com/showcase/themixly" target="_blank">LinkedIn</a> |
-  <a href="https://www.pinterest.com/Themixly" target="_blank">Pinterest</a> |
-  <a href="https://www.youtube.com/@Thmixly" target="_blank">YouTube</a>
 </p>
 
 <footer>
-  © 2025 <a href="https://themixly.com/" target="_blank">Themixly</a>. All rights reserved. | Built with ❤️ for developers & designers.
+  © 2025 Themixly. All rights reserved. | Built with ❤️ for developers & designers.
 </footer>
 
 </body>
