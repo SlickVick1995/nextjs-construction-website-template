@@ -145,3 +145,139 @@ button.hamburger {
 .navbar.navbar-dark button.hamburger {
   color: $navbar-dark-color;
 }
+
+//----------------------------------------------------------//
+//	FIGMA NAVBAR DESIGN
+//----------------------------------------------------------//
+.figma-navbar {
+  width: 100%;
+  height: 94px;
+  border-bottom: 1.5px solid #EEF0F3;
+  background: #FFF;
+  padding: 0;
+
+  .figma-navbar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 48px;
+  }
+
+  .figma-navbar-wrapper {
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    height: 100%;
+  }
+
+  .figma-icon-button {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 6px;
+    background: #F0F0F0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: darken(#F0F0F0, 5%);
+    }
+  }
+
+  .figma-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 32px;
+  }
+
+  .figma-nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .figma-menu-group {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .figma-nav-link {
+    color: #242424;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 20px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #242424;
+      opacity: 0.7;
+    }
+
+    &.inter-font {
+      font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+      font-weight: 400;
+    }
+
+    &.kadwa-bold {
+      font-family: Kadwa, -apple-system, Roboto, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+  }
+
+  .figma-logo-container {
+    margin: 0 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .figma-logo {
+    width: 85px;
+    height: 54px;
+    object-fit: contain;
+  }
+
+  // Hide figma navbar on mobile
+  @media (max-width: 991.98px) {
+    .figma-navbar-wrapper {
+      display: none;
+    }
+
+    // Ensure mobile navbar styling remains consistent
+    height: auto;
+    padding: 1rem 0;
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  // Responsive adjustments for tablet
+  @media (max-width: 1199.98px) and (min-width: 992px) {
+    .figma-navbar-container {
+      padding: 0 24px;
+    }
+
+    .figma-menu-group {
+      gap: 32px;
+    }
+
+    .figma-nav-menu {
+      gap: 24px;
+    }
+  }
+}

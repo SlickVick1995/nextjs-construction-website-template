@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700");
 @import url("https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap");
 :root {
   --bs-gray-100: #fefefe;
@@ -133,7 +132,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 96, 105, 123;
   --bs-body-bg-rgb: 254, 254, 254;
-  --bs-font-sans-serif: "Manrope", sans-serif;
+  --bs-font-sans-serif: "Roboto", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-root-font-size: 20px;
@@ -28089,7 +28088,7 @@ article .post-meta li.ms-auto:before {
   position: relative;
 }
 .code-wrapper .btn-clipboard {
-  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
@@ -35107,6 +35106,119 @@ button.hamburger span {
 .navbar.navbar-bg-dark button.hamburger,
 .navbar.navbar-dark button.hamburger {
   color: #fff;
+}
+
+.figma-navbar {
+  width: 100%;
+  height: 94px;
+  border-bottom: 1.5px solid #EEF0F3;
+  background: #FFF;
+  padding: 0;
+}
+.figma-navbar .figma-navbar-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 48px;
+}
+.figma-navbar .figma-navbar-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  height: 100%;
+}
+.figma-navbar .figma-icon-button {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  background: #F0F0F0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.figma-navbar .figma-icon-button:hover {
+  background: rgb(227.25, 227.25, 227.25);
+}
+.figma-navbar .figma-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 32px;
+}
+.figma-navbar .figma-nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.figma-navbar .figma-menu-group {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.figma-navbar .figma-nav-link {
+  color: #242424;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.figma-navbar .figma-nav-link:hover {
+  color: #242424;
+  opacity: 0.7;
+}
+.figma-navbar .figma-nav-link.inter-font {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.figma-navbar .figma-nav-link.kadwa-bold {
+  font-family: Kadwa, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.figma-navbar .figma-logo-container {
+  margin: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.figma-navbar .figma-logo {
+  width: 85px;
+  height: 54px;
+  object-fit: contain;
+}
+@media (max-width: 991.98px) {
+  .figma-navbar {
+    height: auto;
+    padding: 1rem 0;
+  }
+  .figma-navbar .figma-navbar-wrapper {
+    display: none;
+  }
+  .figma-navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1199.98px) and (min-width: 992px) {
+  .figma-navbar .figma-navbar-container {
+    padding: 0 24px;
+  }
+  .figma-navbar .figma-menu-group {
+    gap: 32px;
+  }
+  .figma-navbar .figma-nav-menu {
+    gap: 24px;
+  }
 }
 
 .card {

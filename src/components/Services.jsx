@@ -17,7 +17,7 @@ const services = [
   },
   {
     id: 3,
-    icon: 'uil-handshake',
+    icon: 'uil-user-check',
     title: 'DEPENDABLE & PUNCTUAL',
     description:
       "Getting started is simple and straightforward. Reach out to us by phone or message, and we'll deliver a transparent estimate within one day. We'll also arrange a convenient property visit to explore the best cleaning solutions tailored to your needs."

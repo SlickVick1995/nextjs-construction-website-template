@@ -24,8 +24,8 @@ const Home = () => {
 
         {/* New Section */}
         <section className="container py-5">
-          <div className="row align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="row align-items-center" style={{ gap: '0px' }}>
+            <div className="col-lg-6 mb-4 mb-lg-0" style={{ paddingRight: '5px' }}>
               <img
                 src="/img/team-pic.jpg"
                 alt="Our Team"
@@ -33,26 +33,27 @@ const Home = () => {
                 style={{ maxWidth: '100%', height: 'auto' }}
               />
             </div>
-            <div className="col-lg-6" style={{ fontFamily: 'Kadwa, serif' }}>
-              <h2
-                className="hero-headline"
+            <div className="col-lg-6" style={{ paddingLeft: '25px' }}>
+              <div className="service-item">
+                <h2
+                  className="service-title kadwa-font m-0"
+                  style={{
+                    color: '#144070',
+                    marginBottom: '2.5rem',
+                    lineHeight: '1.4'
+                  }}
+                >
+                  We Don't Just Clean Windows
+                  <br />
+                  We Perfect Them!
+                </h2>
+              </div>
+              <p
+                className="service-desc kadwa-font m-0"
                 style={{
-                  color: '#144070',
-                  textShadow: '0 4px 4px rgba(0, 0, 0, 0.25)',
-                  WebkitTextStroke: '1px #000',
-                  fontFamily: 'Kadwa, -apple-system, Roboto, Helvetica, sans-serif',
-                  fontSize: 'clamp(24px, 5vw, 36px)',
-                  fontStyle: 'normal',
-                  fontWeight: '700',
-                  lineHeight: 'normal',
-                  marginBottom: '1.5rem'
+                  paddingTop: '1rem'
                 }}
               >
-                We Don't Just Clean Windows
-                <br />
-                We Perfect Them!
-              </h2>
-              <p className="lead">
                 Swell is built on exceptional service at honest prices. We're driven to make our families proud – and
                 earn the trust of yours along the way. Whether we're transforming your windows to crystal clarity or
                 restoring your property's exterior, we treat your home and your time with complete respect. We don't

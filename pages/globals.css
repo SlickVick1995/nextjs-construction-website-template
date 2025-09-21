@@ -1,0 +1,5 @@
+/* Ensure all .service-title headings use the same color/spacing */
+.service-title.kadwa-font {
+  color: #144070;
+  line-height: 1.4;
+}
