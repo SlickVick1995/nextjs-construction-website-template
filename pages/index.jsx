@@ -35,8 +35,23 @@ const Home = () => {
               />
             </div>
             <div className="col-lg-6" style={{ fontFamily: 'Kadwa, serif' }}>
-              <h2 className="display-5 fw-bold">We Don’t Just Clean Windows
-We Perfect Them!</h2>
+              <h2 
+                className="hero-headline"
+                style={{
+                  color: '#144070',
+                  textShadow: '0 4px 4px rgba(0, 0, 0, 0.25)',
+                  WebkitTextStroke: '1px #000',
+                  fontFamily: 'Kadwa, -apple-system, Roboto, Helvetica, sans-serif',
+                  fontSize: 'clamp(24px, 5vw, 36px)',
+                  fontStyle: 'normal',
+                  fontWeight: '700',
+                  lineHeight: 'normal',
+                  marginBottom: '1.5rem'
+                }}
+              >
+                We Don't Just Clean Windows<br />
+                We Perfect Them!
+              </h2>
               <p className="lead">
                 Swell is built on exceptional service at honest prices. We're driven to make our families proud – and earn the trust of yours along the way.
 Whether we're transforming your windows to crystal clarity or restoring your property's exterior, we treat your home and your time with complete respect. We don't consider any job finished until it's done right.
