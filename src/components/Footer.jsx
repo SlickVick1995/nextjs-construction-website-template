@@ -13,7 +13,7 @@ const Widget = ({ list, title }) => (
     <h4 className="widget-title fs-18 mb-3 text-uppercase oswald">{title}</h4>
     <ul className="list-unstyled text-reset mb-0">
       {list.map(({ id, title }) => (
-        <li key={id} className='roboto'>
+        <li key={id} className="roboto">
           <NextLink href="#" title={title} />
         </li>
       ))}
@@ -28,17 +28,16 @@ const Footer = () => {
     <footer className="border-top footer-bg overflow-hidden">
       <div className="container pt-10 pt-md-12 pb-7">
         <div className="row gx-10 justify-content-around">
-
           {/* Logo and Company Description */}
           <div className="col-xl-3">
             <div className="widget d-flex flex-column align-items-center">
               <div className="mb-5 d-flex justify-content-md-center justify-content-xxl-start w-100">
                 <Image
-                  src="/img/logo.webp"
+                  src="/img/swell-logo.png"
                   alt="Logo | Swell"
                   width={200}
                   height={80}
-                  unoptimized={true} // Prevents Next.js image optimization
+                  unoptimized={true}
                   className="text-center"
                 />
               </div>
@@ -66,9 +65,7 @@ const Footer = () => {
               {/* Address */}
               <div className="d-flex mb-3 align-items-start">
                 <i className="uil uil-location-pin-alt fs-30 text-main" />
-                <address className="ms-2 m-0 mt-1 roboto">
-                  123 Main Street, Springfield, IL 62704 United States
-                </address>
+                <address className="ms-2 m-0 mt-1 roboto">123 Main Street, Springfield, IL 62704 United States</address>
               </div>
 
               {/* Email */}
@@ -112,9 +109,7 @@ const Footer = () => {
 
           {/* Footer copyright */}
           <div className="d-md-flex align-items-center justify-content-center">
-            <p className="mb-2 mb-lg-0 text-center roboto">
-              © {currentYear} Swell. All rights reserved
-            </p>
+            <p className="mb-2 mb-lg-0 text-center roboto">© {currentYear} Swell. All rights reserved</p>
           </div>
         </div>
       </div>
