@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
 /*==============================
 =        COLOR UTILITIES       =
 ==============================*/
@@ -151,3 +153,37 @@ h2 span {
   border: 1px solid #eba10e;
 }
 
+/*==============================
+=    SERVICES REDESIGN         =
+==============================*/
+.kadwa-font { font-family: 'Kadwa', serif; }
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 48px;
+}
+
+@media (max-width: 991.98px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
+
+.service-item { max-width: 582px; }
+
+.service-icon { font-size: 100px; color: #144070; line-height: 1; }
+
+.service-title {
+  margin: 12px 0;
+  color: #144070;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.2;
+}
+@media (max-width: 575.98px) {
+  .service-title { font-size: 26px; }
+}
+
+.service-desc { font-size: 16px; color: #000; font-weight: 700; }
