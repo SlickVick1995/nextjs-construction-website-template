@@ -65,7 +65,7 @@ const Navbar = ({
             title={
               <Image
                 alt="Logo | Swell"
-                src="/img/logo.webp"
+                src="/img/swell-logo.png"
                 width={160}
                 height={60}
                 unoptimized={true}
