@@ -219,7 +219,11 @@ h2 span {
   display: flex;
   align-items: center;
   gap: 32px; /* distance between icon and menu group */
+  flex: 1; /* keep logo perfectly centered between left and right groups */
 }
+
+.nav-right { justify-content: flex-end; }
+.nav-left { justify-content: flex-start; }
 
 .nav-menu-left, .nav-menu-right {
   display: flex;
