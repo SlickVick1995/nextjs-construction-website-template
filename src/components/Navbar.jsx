@@ -3,16 +3,9 @@ import { useRouter } from 'next/router';
 import useSticky from 'hooks/useSticky';
 import Image from 'next/image.js';
 import NextLink from 'components/NextLink';
-import SocialLinks from 'components/SocialLinks';
 
 /**
- * Navbar component with sticky behavior, offcanvas menu, and responsive layout.
- *
- * @param {Object} props
- * @param {string} [props.navClassName] - Default navbar class names.
- * @param {string} [props.navOtherClass] - Class names for the offcanvas hamburger container.
- * @param {boolean} [props.fancy] - If true, wraps navbar content in a fancier container.
- * @param {boolean} [props.stickyBox] - If true, adds padding top equal to navbar height when sticky.
+ * Navbar component with centered logo and split navigation menu
  */
 const Navbar = ({
   navClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light',
@@ -20,45 +13,81 @@ const Navbar = ({
   fancy = false,
   stickyBox = true
 }) => {
-  // Track if navbar should be sticky based on scroll position
   const sticky = useSticky(350);
-
-  // Ref to navbar DOM element, used to get height for sticky padding
   const navbarRef = useRef(null);
-
-  // Next.js router (not used here but available if needed)
   const router = useRouter();
 
-  // Class name for fixed sticky navbar version
-  const fixedClassName =
-    'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed';
+  const fixedClassName = 'navbar navbar-expand-lg center-nav transparent navbar-light navbar-clone fixed';
 
-  // Navbar main content: logo, offcanvas menu, hamburger button
   const headerContent = (
     <Fragment>
-      {/* Navbar brand/logo */}
-      <div className="navbar-brand w-100">
-        <NextLink
-          href="/"
-          title={
-            <Image
-              unoptimized={true}
-              alt="Logo | Swell"
-              src="/img/swell-logo.png"
-              width={190}
-              height={70}
-            />
-          }
-        />
+      {/* Mobile hamburger button */}
+      <div className={navOtherClass}>
+        <button
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvas-nav"
+          className="hamburger offcanvas-nav-btn"
+          aria-label="Toggle navigation"
+        >
+          <span />
+        </button>
       </div>
 
-      {/* Offcanvas navigation menu */}
+      {/* Desktop Navigation */}
+      <div className="navbar-nav-container d-none d-lg-flex">
+        {/* Left side navigation */}
+        <div className="nav-left">
+          <button className="icon-button me-3" aria-label="User profile">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66667C5.78261 12.5 4.93476 12.8512 4.30964 13.4763C3.68452 14.1014 3.33333 14.9493 3.33333 15.8333V17.5M13.3333 5.83333C13.3333 7.67428 11.8409 9.16667 10 9.16667C8.15905 9.16667 6.66667 7.67428 6.66667 5.83333C6.66667 3.99238 8.15905 2.5 10 2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <div className="nav-menu-left">
+            <NextLink href="#" className="nav-link-custom">About Us</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Services</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Clients</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Press</NextLink>
+          </div>
+        </div>
+
+        {/* Center logo */}
+        <div className="navbar-brand-center">
+          <NextLink
+            href="/"
+            title={
+              <Image
+                unoptimized={true}
+                alt="Logo | Swell"
+                src="/img/swell-logo.png"
+                width={85}
+                height={54}
+              />
+            }
+          />
+        </div>
+
+        {/* Right side navigation */}
+        <div className="nav-right">
+          <div className="nav-menu-right">
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Locations</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Franchise</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Shop</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold">Get a Quote!</NextLink>
+          </div>
+          <button className="icon-button ms-3" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M16.6695 16.6695L13.3764 13.3764M15.1005 9.21552C15.1005 12.4657 12.4657 15.1005 9.21552 15.1005C5.96535 15.1005 3.33057 12.4657 3.33057 9.21552C3.33057 5.96535 5.96535 3.33057 9.21552 3.33057C12.4657 3.33057 15.1005 5.96535 15.1005 9.21552Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation - Offcanvas */}
       <div
         id="offcanvas-nav"
         data-bs-scroll="true"
         className="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
       >
-        {/* Offcanvas header with close button and logo, visible on small screens */}
         <div className="offcanvas-header d-lg-none offcavas-bg">
           <NextLink
             href="/"
@@ -81,64 +110,59 @@ const Navbar = ({
           />
         </div>
 
-        {/* Offcanvas body containing navigation links and contact info */}
         <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100 offcavas-bg">
-          {/* Navigation links */}
           <ul className="navbar-nav align-items-lg-center">
-            {/* Each nav item closes offcanvas on click */}
             <li className="nav-item" data-bs-dismiss="offcanvas">
               <NextLink href="/" title="Home" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#" title="About Us" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
               <NextLink href="#" title="Services" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="About" className="nav-link" />
+              <NextLink href="#" title="Clients" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Contact" className="nav-link" />
+              <NextLink href="#" title="Press" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#" title="Locations" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#" title="Franchise" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#" title="Shop" className="nav-link" />
+            </li>
+            <li className="nav-item" data-bs-dismiss="offcanvas">
+              <NextLink href="#" title="Get a Quote!" className="nav-link" />
             </li>
           </ul>
-
-          {/* Offcanvas footer with contact info and social links (mobile only) */}
-          <div className="offcanvas-footer d-lg-none">
-            <div>
-              <div className="d-flex align-items-center mb-5">
-                <i className="uil uil-envelope fs-32 text-main bg-white rounded-circle me-2" />
-                <p className="fs-16 text-center m-0">
-                  <a href="mailto:swell@gmail.com">swell@gmail.com</a>
-                </p>
-              </div>
-              <div className="d-flex mb-5">
-                <i className="uil uil-phone-volume fs-32 text-main bg-white rounded-circle me-2" />
-                <p className="fs-18 text-center m-0 d-flex flex-column">
-                  <a href="tel:+919876543210">+91 98765 43210</a>
-                  <a href="tel:+911234567890">+91 12345 67890</a>
-                </p>
-              </div>
-              <SocialLinks />
-            </div>
-          </div>
         </div>
       </div>
 
-      {/* Hamburger menu button for toggling offcanvas on small screens */}
-      <div className={navOtherClass}>
-        <button
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas-nav"
-          className="hamburger offcanvas-nav-btn"
-          aria-label="Toggle navigation"
-        >
-          <span />
-        </button>
+      {/* Mobile Logo (shown only on mobile) */}
+      <div className="navbar-brand d-lg-none">
+        <NextLink
+          href="/"
+          title={
+            <Image
+              unoptimized={true}
+              alt="Logo | Swell"
+              src="/img/swell-logo.png"
+              width={120}
+              height={45}
+            />
+          }
+        />
       </div>
     </Fragment>
   );
 
   return (
     <Fragment>
-      {/* Spacer div to prevent layout jump when navbar becomes sticky */}
       {stickyBox && (
         <div
           style={{
@@ -147,21 +171,10 @@ const Navbar = ({
         />
       )}
 
-      {/* Main navbar element with sticky or normal className */}
-      <nav ref={navbarRef} className={sticky ? fixedClassName : navClassName}>
-        {fancy ? (
-          // Fancy container with background and layout tweaks
-          <div className="container">
-            <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-end" style={{ padding: '10px 0' }}>
-              {headerContent}
-            </div>
-          </div>
-        ) : (
-          // Default container for navbar content
-          <div className="container flex-lg-row flex-nowrap align-items-center py-2">
-            {headerContent}
-          </div>
-        )}
+      <nav ref={navbarRef} className={`${sticky ? fixedClassName : navClassName} figma-navbar`}>
+        <div className="container-fluid px-4">
+          {headerContent}
+        </div>
       </nav>
     </Fragment>
   );
