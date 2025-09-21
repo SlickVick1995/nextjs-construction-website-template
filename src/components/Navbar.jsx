@@ -37,16 +37,22 @@ const Navbar = ({
       <div className="navbar-nav-container d-none d-lg-flex">
         {/* Left side navigation */}
         <div className="nav-left">
-          <button className="icon-button me-3" aria-label="User profile">
+          <button className="icon-button me-2" aria-label="User profile">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66667C5.78261 12.5 4.93476 12.8512 4.30964 13.4763C3.68452 14.1014 3.33333 14.9493 3.33333 15.8333V17.5M13.3333 5.83333C13.3333 7.67428 11.8409 9.16667 10 9.16667C8.15905 9.16667 6.66667 7.67428 6.66667 5.83333C6.66667 3.99238 8.15905 2.5 10 2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </button>
+          <button className="icon-button me-3" aria-label="Search">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M16.6695 16.6695L13.3764 13.3764M15.1005 9.21552C15.1005 12.4657 12.4657 15.1005 9.21552 15.1005C5.96535 15.1005 3.33057 12.4657 3.33057 9.21552C3.33057 5.96535 5.96535 3.33057 9.21552 3.33057C12.4657 3.33057 15.1005 5.96535 15.1005 9.21552Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
           <div className="nav-menu-left">
-            <NextLink href="#" className="nav-link-custom">About Us</NextLink>
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Services</NextLink>
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Clients</NextLink>
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Press</NextLink>
+            <NextLink href="/" className="nav-link-custom" title="Home" />
+            <NextLink href="#" className="nav-link-custom" title="About Us" />
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Services" />
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Clients" />
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Press" />
           </div>
         </div>
 
