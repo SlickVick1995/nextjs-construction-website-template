@@ -190,74 +190,67 @@ h2 span {
 .service-desc { font-size: 16px; color: #000; font-weight: 700; }
 
 /*==============================
-=      FIGMA NAVBAR DESIGN     =
+=      FIGMA NAVBAR REDESIGN   =
 ==============================*/
-.figma-navbar {
+.figma-navbar-redesign {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   border-bottom: 1.5px solid #EEF0F3;
   background: #FFF !important;
-  min-height: 94px;
+  height: 94px;
+  padding: 0 !important;
 }
 
-/* Figma-specific inner container with exact padding */
-.figma-container {
-  position: relative;
+.figma-navbar-wrapper {
   display: flex;
+  padding: 20px 48px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center; /* center logo absolutely; groups use space-between */
-  gap: 32px;
-  padding: 20px 48px; /* exact from Figma */
+  align-self: stretch;
+  width: 100%;
 }
 
-.navbar-nav-container {
+.figma-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.nav-left, .nav-right {
+.figma-left-buttons,
+.figma-right-buttons {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.figma-center-container {
   display: flex;
   align-items: center;
-  gap: 32px; /* distance between icon and menu group */
-  flex: 1; /* keep logo perfectly centered between left and right groups */
+  gap: 32px;
+  position: relative;
 }
 
-.nav-right { justify-content: flex-end; }
-.nav-left { justify-content: flex-start; }
-
-.nav-menu-left, .nav-menu-right {
+.figma-menu-group-left,
+.figma-menu-group-right {
   display: flex;
-  align-items: center;
-  gap: 48px; /* distance between menu items in a group */
+  align-items: flex-start;
+  gap: 48px;
 }
 
-.navbar-brand-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+.figma-logo-center {
+  width: 85px;
+  height: 54px;
+  aspect-ratio: 85/54;
 }
 
-.nav-link-custom {
-  color: #242424 !important;
-  text-align: center;
-  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.figma-logo-center img {
+  width: 85px;
+  height: 54px;
 }
 
-.nav-link-custom.nav-link-bold {
-  font-family: 'Kadwa', serif;
-  font-weight: 700;
-}
-
-.nav-link-custom:hover {
-  color: #eba10e !important;
-}
-
-.icon-button {
+.figma-icon-button {
   display: flex;
   padding: 10px;
   justify-content: center;
@@ -270,19 +263,47 @@ h2 span {
   transition: background-color 0.3s ease;
 }
 
-.icon-button:hover {
+.figma-icon-button:hover {
   background: #e0e0e0;
 }
 
-.icon-button svg {
+.figma-icon-button svg {
   width: 20px;
   height: 20px;
 }
 
+.figma-nav-link {
+  color: #242424;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.figma-nav-link:hover {
+  color: #eba10e !important;
+}
+
+.figma-nav-link-inter {
+  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.figma-nav-link-kadwa {
+  font-family: 'Kadwa', serif;
+  font-weight: 700;
+}
+
 /* Mobile adjustments */
 @media (max-width: 991.98px) {
-  .figma-navbar {
-    min-height: auto;
-    padding: 15px 0;
+  .figma-navbar-redesign {
+    height: auto;
+    min-height: 70px;
+  }
+
+  .figma-navbar-wrapper {
+    padding: 15px 20px;
   }
 }
