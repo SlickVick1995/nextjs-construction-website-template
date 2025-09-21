@@ -172,7 +172,7 @@ const Navbar = ({
       )}
 
       <nav ref={navbarRef} className={`${sticky ? fixedClassName : navClassName} figma-navbar`}>
-        <div className="container-fluid px-4">
+        <div className="figma-container w-100">
           {headerContent}
         </div>
       </nav>
