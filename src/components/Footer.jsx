@@ -34,11 +34,11 @@ const Footer = () => {
             <div className="widget d-flex flex-column align-items-center">
               <div className="mb-5 d-flex justify-content-md-center justify-content-xxl-start w-100">
                 <Image
-                  src="/img/logo.webp"
+                  src="/img/swell-logo.png"
                   alt="Logo | Swell"
                   width={200}
                   height={80}
-                  unoptimized={true} // Prevents Next.js image optimization
+                  unoptimized={true}
                   className="text-center"
                 />
               </div>
