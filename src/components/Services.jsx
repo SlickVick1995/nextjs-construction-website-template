@@ -33,8 +33,7 @@ const Services = () => {
       <div className="container py-14 py-md-16">
         <div className="row">
           <div className="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
-            <h2 className="fs-15 text-uppercase text-muted mb-3 text-center">What We Do?</h2>
-            <h3 className="display-4 mb-10 px-xl-10 text-center">The service we offer is specifically designed to meet your needs.</h3>
+          
           </div>
         </div>
         <div className="row gx-lg-8 gx-xl-12 gy-8">
