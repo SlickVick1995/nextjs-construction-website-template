@@ -4,8 +4,7 @@ import Head from 'next/head';
 // Components
 import PageProgress from 'components/PageProgress';
 import Hero from 'components/Hero';
-import About from 'components/About';
-import WhyChoose from 'components/WhyChoose';
+import Services from 'components/Services';
 
 const Home = () => {
   return (
@@ -15,8 +14,8 @@ const Home = () => {
 
       {/* Meta Information */}
       <Head>
-        <title>Buildify – Free Next.js Website Template for Contractors, Builders & Construction Companies</title>
-        <meta name="description" content="Free Next.js website template for builders, contractors & construction firms – built with Bootstrap" />
+        <title>Swell - Cleaning Services</title>
+        <meta name="description" content="Swell - Cleaning Services" />
       </Head>
 
       <main className="content-wrapper overflow-hidden">
@@ -24,26 +23,59 @@ const Home = () => {
         {/* Hero Section */}
         <Hero />
 
-        {/* About Section */}
-        <section className="wrapper">
-          <div className="container py-12 py-md-14">
-            <About
-              headingH1="Welcome to "
-              span="Buildify"
-              para="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque obcaecati odit fuga, velit cum temporibus autem soluta mollitia saepe porro..."
-              para2="Excepturi accusamus delectus velit consequuntur! Eum quod modi velit aut molestias, cum animi voluptates eaque!"
-              imgPosition="left"
-              src="/img/welcome-to-constructions.webp"
-            />
+        {/* New Section */}
+        <section className="container py-5">
+          <div className="row align-items-center">
+            <div className="col-lg-6 mb-4 mb-lg-0">
+              <img
+                src="/img/team-pic.jpg"
+                alt="Our Team"
+                className="img-fluid rounded"
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
+            </div>
+            <div className="col-lg-6" style={{ fontFamily: 'Kadwa, serif' }}>
+              <h2 className="display-5 fw-bold">We Don’t Just Clean Windows
+We Perfect Them!</h2>
+              <p className="lead">
+                Swell is built on exceptional service at honest prices. We're driven to make our families proud – and earn the trust of yours along the way.
+Whether we're transforming your windows to crystal clarity or restoring your property's exterior, we treat your home and your time with complete respect. We don't consider any job finished until it's done right.
+At Swell, quality service shouldn't cost a fortune. We deliver the results you deserve at prices that make sense.
+              </p>
+              <button
+                className="quote-button"
+                style={{
+                  display: 'flex',
+                  width: '307px',
+                  height: '58px',
+                  padding: '12px',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  gap: '8px',
+                  flexShrink: 0,
+                  borderRadius: '8px',
+                  border: '1px solid rgba(44, 44, 44, 1)',
+                  background: '#17416F',
+                  color: 'rgba(245, 245, 245, 1)',
+                  fontFamily: 'Kadwa, -apple-system, Roboto, Helvetica, sans-serif',
+                  fontSize: '24px',
+                  fontWeight: '700',
+                  lineHeight: '120%',
+                  letterSpacing: '-0.48px',
+                  cursor: 'pointer',
+                  border: 'none',
+                  marginTop: '24px'
+                }}
+              >
+                Generate a Quote
+              </button>
+            </div>
           </div>
         </section>
 
-        {/* Why Choose Us */}
-        <section className="wrapper whychoose-bg">
-          <div className="container py-14 py-md-16">
-            <WhyChoose />
-          </div>
-        </section>
+        {/* Services Section */}
+        <Services />
+
       </main>
     </Fragment>
   );

@@ -67,20 +67,6 @@ a:hover,
 =        HEADING STYLE         =
 ==============================*/
 
-/* Icon before all h1, h2 except those using `.no-icon` */
-h1::before,
-h2::before {
-  content: url('/img/icon.webp');
-  position: relative;
-  top: 10px;
-  padding-right: 10px;
-}
-
-.no-icon h1::before,
-.no-icon h2::before,
-.cta h2::before {
-  content: none !important;
-}
 
 /* Section headings */
 section h1,

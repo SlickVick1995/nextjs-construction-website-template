@@ -1,0 +1,464 @@
+//----------------------------------------------------------//
+//	HERO SECTION
+//----------------------------------------------------------//
+
+// Import Kadwa font
+@import url('https://fonts.googleapis.com/css2?family=Kadwa:wght@400;700&display=swap');
+
+// Hero specific colors
+$hero-title-color: #144070;
+$hero-btn-bg: #17416F;
+$hero-btn-text: #F5F5F5;
+$hero-text-color: #000;
+
+.hero-section {
+  padding: 4.375rem 0; // 70px
+  background: #FFF;
+
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.5rem 0;
+  }
+}
+
+.hero-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem; // 20px
+  margin-bottom: 4rem; // 64px
+  padding: 0 5rem; // 80px
+
+  @media (max-width: 992px) {
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 0.75rem;
+    margin-bottom: 1.5rem;
+    gap: 0.75rem;
+  }
+}
+
+.hero-video-container {
+  flex: 1;
+  max-width: 80rem; // 1280px
+  
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+}
+
+.hero-video-placeholder {
+  width: 100%;
+  height: 45rem; // 720px
+  background: linear-gradient(135deg, #1a73e8, #343f52);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  @media (max-width: 992px) {
+    height: 35rem;
+  }
+
+  @media (max-width: 768px) {
+    height: 25rem;
+    border-radius: 0.375rem;
+  }
+
+  @media (max-width: 480px) {
+    height: 18rem;
+    border-radius: 0.25rem;
+  }
+
+  @media (max-width: 360px) {
+    height: 15rem;
+  }
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-title {
+  color: white;
+  font-family: 'Kadwa', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  padding: 0 1rem;
+
+  @media (max-width: 992px) {
+    font-size: 1.75rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    padding: 0 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.125rem;
+  }
+}
+
+.hero-top-image {
+  flex-shrink: 0;
+  margin-top: 0; // Align with video top
+  
+  @media (max-width: 768px) {
+    align-self: center;
+  }
+}
+
+.top-image {
+  width: 17.125rem; // 274px
+  height: 11rem; // 176px
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+  @media (max-width: 992px) {
+    width: 15rem;
+    height: 9.5rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    aspect-ratio: 274/176;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 17.125rem;
+    border-radius: 0.375rem;
+  }
+}
+
+.hero-content {
+  margin-top: 2rem;
+  
+  @media (max-width: 768px) {
+    margin-top: 1rem;
+  }
+}
+
+.hero-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  @media (max-width: 992px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.hero-main-image {
+  width: 27.625rem; // 442px
+  height: 27.625rem; // 442px
+  object-fit: cover;
+  border-radius: 1.25rem; // 20px
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 1200px) {
+    width: 24rem;
+    height: 24rem;
+  }
+
+  @media (max-width: 992px) {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 22rem;
+    height: auto;
+    aspect-ratio: 1;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 18rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+}
+
+.hero-text-content {
+  padding-left: 2rem;
+
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+  }
+
+  @media (max-width: 992px) {
+    padding-left: 0;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 0.75rem;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 0.5rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 4rem;
+  }
+}
+
+.hero-title {
+  font-family: 'Kadwa', serif;
+  font-size: 2.25rem; // 36px
+  font-weight: 700;
+  line-height: 1.2;
+  color: $hero-title-color;
+  text-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  margin-bottom: 1.5625rem; // 25px
+  margin-top: -1.1875rem; // -19px to match design
+
+  @media (max-width: 1200px) {
+    font-size: 2rem;
+    line-height: 1.25;
+  }
+
+  @media (max-width: 992px) {
+    font-size: 1.875rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 1.625rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.375rem;
+    line-height: 1.35;
+    margin-bottom: 0.875rem;
+    text-shadow: 0 0.125rem 0.125rem rgba(0, 0, 0, 0.25);
+  }
+
+  @media (max-width: 360px) {
+    font-size: 1.25rem;
+  }
+}
+
+.hero-description {
+  font-family: 'Kadwa', serif;
+  font-size: 1rem; // 16px
+  font-weight: 700;
+  line-height: 1.5;
+  color: $hero-text-color;
+  margin-bottom: 2rem;
+
+  p {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 992px) {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.75rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    line-height: 1.65;
+    margin-bottom: 1.5rem;
+
+    p {
+      margin-bottom: 0.875rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    font-size: 0.8125rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+
+    p {
+      margin-bottom: 0.75rem;
+    }
+  }
+}
+
+.hero-cta {
+  margin-top: 2rem;
+  
+  @media (max-width: 992px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.hero-quote-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19.1875rem; // 307px
+  height: 3.625rem; // 58px
+  padding: 0.75rem; // 12px
+  gap: 0.5rem; // 8px
+  border-radius: 0.5rem; // 8px
+  border: 1px solid rgba(44, 44, 44, 1);
+  background: $hero-btn-bg;
+  color: $hero-btn-text;
+  font-family: 'Kadwa', serif;
+  font-size: 1.5rem; // 24px
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.03rem; // -0.48px
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: darken($hero-btn-bg, 10%);
+    color: $hero-btn-text;
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(23, 65, 111, 0.25);
+  }
+
+  @media (max-width: 992px) {
+    width: 17rem;
+    height: 3.25rem;
+    font-size: 1.375rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 18rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    padding: 0.625rem;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 16rem;
+    height: 2.75rem;
+    font-size: 1.125rem;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+  }
+
+  @media (max-width: 360px) {
+    max-width: 14rem;
+    font-size: 1rem;
+  }
+}
+
+// Mobile-specific improvements
+.hero-quote-btn {
+  // Better touch target for mobile
+  @media (max-width: 768px) {
+    min-height: 44px; // Apple's recommended minimum touch target
+    -webkit-tap-highlight-color: rgba(23, 65, 111, 0.3);
+
+    &:active {
+      transform: translateY(0);
+      background: darken($hero-btn-bg, 15%);
+    }
+  }
+}
+
+// Improve text readability on small screens
+@media (max-width: 480px) {
+  .hero-title {
+    // Improve text rendering on mobile
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .hero-description {
+    // Better text spacing for mobile reading
+    text-align: left;
+
+    p {
+      max-width: none;
+    }
+  }
+}
+
+// Container adjustments for very small screens
+@media (max-width: 360px) {
+  .hero-section {
+    padding: 1rem 0;
+  }
+
+  .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+// Landscape orientation on mobile devices
+@media (max-width: 768px) and (orientation: landscape) {
+  .hero-video-placeholder {
+    height: 15rem;
+  }
+
+  .hero-section {
+    padding: 1.5rem 0;
+  }
+
+  .hero-top {
+    margin-bottom: 1.5rem;
+  }
+}
+
+// High DPI displays (Retina, etc.)
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-main-image,
+  .top-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}

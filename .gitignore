@@ -35,4 +35,4 @@ yarn-error.log*
 *.tsbuildinfo
 
 tools/node_modules
-tools/output
+tools/output.env

@@ -35,7 +35,7 @@ const Footer = () => {
               <div className="mb-5 d-flex justify-content-md-center justify-content-xxl-start w-100">
                 <Image
                   src="/img/logo.webp"
-                  alt="Logo | Buildify"
+                  alt="Logo | Swell"
                   width={200}
                   height={80}
                   unoptimized={true} // Prevents Next.js image optimization
@@ -43,8 +43,7 @@ const Footer = () => {
                 />
               </div>
               <p className="lead mb-2 text-md-center text-xl-start fs-18 roboto">
-                Buildify is a trusted residential construction company in Location, delivering high-quality,
-                innovative, and reliable home-building solutions.
+                Swell is a trusted cleaning service company, delivering high-quality and reliable cleaning solutions.
               </p>
             </div>
 
@@ -76,7 +75,7 @@ const Footer = () => {
               <div className="d-flex mb-3 align-items-center">
                 <i className="uil uil-envelope fs-26 text-main" />
                 <a href="mailto:buildify@gmail.com" className="link-body ms-2 roboto">
-                  buildify@gmail.com
+                  swell@gmail.com
                 </a>
               </div>
 
@@ -114,7 +113,7 @@ const Footer = () => {
           {/* Footer copyright */}
           <div className="d-md-flex align-items-center justify-content-center">
             <p className="mb-2 mb-lg-0 text-center roboto">
-              © {currentYear} Buildify. All rights reserved
+              © {currentYear} Swell. All rights reserved
             </p>
           </div>
         </div>

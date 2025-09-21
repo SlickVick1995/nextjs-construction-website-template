@@ -1,161 +1,338 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Free Next.js website template for builders, contractors & construction firms – built with Bootstrap" />
-  <meta name="keywords" content="Next.js construction template, React contractor website, Bootstrap 5 builder theme, SCSS construction UI, free Next.js template, responsive builder website, multi-page contractor site, modern construction portfolio, SEO-friendly builder template, free website for construction company" />
-  <meta name="author" content="Themixly Web" />
-  <link rel="canonical" href="https://github.com/themixlyweb/nextjs-construction-website-template" />
-</head>
-<body>
-<h1>Buildify – Free Next.js Website Template for Contractors, Builders & Construction Companies</h1>
+# Buildify - Next.js Construction Website Template
 
-<h2>Introduction</h2>
-<p>Buildify is a free, modern, and fully responsive Next.js & React template designed for construction companies, contractors, builders, and engineering firms. Built with React 18+, Next.js 14+, Bootstrap 5, and SCSS, it helps you launch a fast, SEO-friendly, and professional website for showcasing services, projects, teams, and more — all with clean code and a mobile-first layout.
-</p>
+A modern, responsive website template built with Next.js, React, and Bootstrap for construction companies, contractors, and builders.
 
-<h2>🔗 Live Preview & Download</h2>
-<ul>
-  <li>🚀 <a href="https://themixly.com/preview/192/construction-company-react-nextjs-template" target="_blank"> Live Demo – Buildify Template</a></li>
-  <li>📦 <a href="https://github.com/themixlyweb/nextjs-construction-website-template" target="_blank"> Download from GitHub (Free)</a></li>
-</ul>
+## 🚀 Features
 
-<h2>🧩 Feature Comparison: GitHub Free vs Themixly Pro</h2>
-<table>
-  <thead>
-    <tr><th>Feature</th><th>GitHub Free Version</th><th>Themixly Full Version</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Next.js 14+, React 18+</td><td>✅</td><td>✅</td></tr>
-    <tr><td>SCSS, Bootstrap 5.x</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Multi-page Layout</td><td>❌</td><td>✅</td></tr>
-    <tr><td>Custom Components</td><td>Limited</td><td>Full UI Kit Included</td></tr>
-    <tr><td>Contact Forms</td><td>❌</td><td>✅</td></tr>
-    <tr><td>Responsive for All Devices</td><td>✅</td><td>✅</td></tr>
-    <tr><td>Project/Portfolio Pages</td><td>❌</td><td>✅</td></tr>
-    <tr><td>Construction Focused Layout</td><td>❌</td><td>✅</td></tr>
-    <tr><td>Lifetime Updates</td><td>Community Only</td><td>Lifetime Free Updates</td></tr>
-    <tr><td>Licensing</td><td>MIT (Free)</td><td>Commercial Use Allowed</td></tr>
-    <tr><td>Premium Support</td><td>Community via GitHub</td><td>1:1 Support via Email</td></tr>
-  </tbody>
-</table>
+- **Next.js 14+** with App Router
+- **React 18+** with modern hooks
+- **Bootstrap 5.3** responsive grid system
+- **SCSS** modular styling architecture
+- **Mobile-first** responsive design
+- **SEO optimized** with proper meta tags
+- **Performance optimized** with lazy loading
+- **Accessibility compliant** (WCAG guidelines)
 
-<h3>👉 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank"> Upgrade to the Pro Version</a></h3>
+## 📋 Table of Contents
 
-<h2>🧠 Template Use Cases</h2>
-<p>This construction website template is ideal for:</p>
-<ul>
-  <li>Construction companies & general contractors</li>
-  <li>Builders, engineers & site manager</li>
-  <li>Architecture or civil project firms</li>
-  <li>Corporate portfolio or project showcase sites</li>
-  <li>Real estate developers & infrastructure companies</li>
-  <li>Maintenance & renovation service providers</li>
-</ul>
+- [Quick Start](#quick-start)
+- [Project Structure](#project-structure)
+- [Development](#development)
+- [Components](#components)
+- [Styling](#styling)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
 
-<h2>💡 Key Features</h2>
-<ul>
-  <li>React 18+, Next.js 14+ with App Router</li>
-  <li>Bootstrap 5.x and SCSS styling</li>
-  <li>Clean & responsive layout for all devices</li>
-  <li>Optimized for SEO and speed</li>
-  <li>MIT license (free version)</li>
-</ul>
+## ⚡ Quick Start
 
-<h2>📸 Screenshots</h2>
-<figure>
-  <figcaption>Includes pages like Home, About Us, Projects and Contact</figcaption><br/>
-  <img src="https://themixly.com/wp-content/uploads/2025/06/Buildify-Product-Detail-2-scaled.png" alt="Buildify Template Pages Screenshot">
-</figure>
+### Prerequisites
 
-<figure>
-  <figcaption>Responsive layout built for desktop, tablet, and mobile devices</figcaption><br/>
-  <img src="https://themixly.com/wp-content/uploads/2025/06/Buildify-Product-Detail-1-scaled.png" alt="Buildify Responsive Layout">
-</figure>
+- Node.js 18+ 
+- npm or yarn
+- Modern web browser
 
-<h2>✨ Why Choose Buildify?</h2>
-<ul>
-  <li>Built for speed and performance with minimal dependencies</li>
-  <li>Construction-focused layout with pre-designed UI blocks</li>
-  <li>RPerfect for showcasing your team, services, and past projects</li>
-  <li>Clean code structure — easy to scale and customize</li>
-  <li>Ideal for freelancers, agencies, and businesses in construction or architecture</li>
-  <li>Launch-ready — deploy easily on Netlify, Vercel, or your own servern</li>
-</ul>
+### Installation
 
-<h2>🛠️ Tech Stack</h2>
-<ul>
-  <li>⚛️ React 18+</li>
-  <li>🌐 Next.js 14+</li>
-  <li>🎨 Bootstrap 5.x</li>
-  <li>🧩 SCSS Modules</li>
-  <li>🛡️ Optimized for SEO + Accessibility</li>
-</ul>
+```bash
+# Clone the repository
+git clone https://github.com/your-username/buildify.git
 
-<h2>🚀 Getting Started</h2>
-<pre><code>npm install       # Install dependencies
-npm run dev       # Start development server
-npm run build     # Build for production</code></pre>
+# Navigate to project directory
+cd buildify
 
-<h3>📁 Folder Structure</h3>
+# Install dependencies
+npm install
 
-<pre><code>Buildify/
-├── pages/
-├── public/
-│   ├── images/
+# Start development server
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view the website.
+
+## 📁 Project Structure
+
+```
+buildify/
+├── pages/                    # Next.js pages
+│   ├── _app.jsx             # App wrapper component
+│   ├── _document.jsx        # HTML document structure
+│   └── index.jsx            # Homepage
 ├── src/
-│   ├── assets/
-│   │   └── scss/
-│   ├── components/
-│   ├── data/
-│   └── styles/
-├── README.md
-└── package.json</code></pre>
+│   ├── components/          # React components
+│   │   ├── Hero.jsx         # Hero section component
+│   │   ├── Header.jsx       # Site header
+│   │   ├── Footer.jsx       # Site footer
+│   │   └── ...
+│   ├── assets/scss/         # SCSS styling
+│   │   ├── theme/           # Theme-specific styles
+│   │   │   ├── _hero.scss   # Hero component styles
+│   │   │   ├── _buttons.scss
+│   │   │   └── ...
+│   │   ├── _variables.scss  # SCSS variables
+│   │   └── style.scss       # Main stylesheet
+│   ├── hooks/               # Custom React hooks
+│   ├── theme/               # Theme configuration
+│   └── data.js              # Static data
+├── public/                  # Static assets
+│   ├── img/                 # Images
+│   ├── css/                 # Compiled CSS
+│   └── fonts/               # Web fonts
+└── package.json
+```
 
-<h2>📦 What’s Included in the Free GitHub Version?</h2>
-<p>The GitHub version includes only essential components to help you get started:</p>
-<ul>
-  <li>✅ Header with navigation</li>
-  <li>✅ Hero Section (Homepage banner)</li>
-  <li>✅ About Section (Company intro)</li>
-  <li>✅ Why Choose Section</li>
-  <li>✅ Footer with contact & social links</li>
-  <li>✅ Responsive layout using Bootstrap 5</li>
-  <li>✅ SCSS styling</li>
-  <li>✅ React, JSX, and HTML structure</li>
-</ul>
-<p>🔒 Full features like multi-page layout, appointment form, treatment details, and more are available in the premium version.</p>
-<p>👉 <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank">Grab the Full Package on Themixly →</a></p>
+## 🛠️ Development
 
-<h2>📝 License</h2>
-<p>This template is licensed under the <a href="https://github.com/themixlyweb/nextjs-construction-website-template/blob/main/LICENSE" target="_blank">MIT License</a>.<br>
-You may use this version for personal and educational purposes.<br>
-<p>👉 For commercial projects, please purchase the <a href="https://themixly.com/themes/construction-company-react-nextjs-template/" target="_blank">full version</a> here.</p>
+### Available Scripts
 
-<h2>📢 Support & Contributions</h2>
-<ul>
-  <li>⭐ Star this repo if you find it useful</li>
-  <li>Share with your developers or construction business owners</li>
-</ul>
+```bash
+# Development server with hot reload
+npm run dev
 
-<h2>🔗 Other Templates You May Like</h2>
-<ul>
-  <li>🦴 <a href="https://themixly.com/themes/react-restaurant-cafe-one-page-template/" target="_blank">RestoOne – Restaurant One Page </a></li>
-  <li>🏗 <a href="https://themixly.com/themes/law-firm-attorney-react-template/" target="_blank">LawEdge – Law Firm Website</a></li>
-</ul>
+# Build for production
+npm run build
 
-<p>Explore more templates → <a href="https://themixly.com/themes" target="_blank">Themixly Themes</a></p>
+# Start production server
+npm start
 
-<h2>🧾 Contact Us</h2>
-<p>
-  Need support or custom development?<br>
-  📩 <a href="https://themixly.com/contact-us/" target="_blank">Contact Themixly Team</a><br>
-</p>
+# Compile SCSS to CSS
+npm run sass
 
-<footer>
-  © 2025 Themixly. All rights reserved. | Built with ❤️ for developers & designers.
-</footer>
+# Lint code
+npm run lint
+```
 
-</body>
-</html>
+### Development Workflow
+
+1. **Start development server**: `npm run dev`
+2. **Edit components**: Modify files in `src/components/`
+3. **Update styles**: Edit SCSS files in `src/assets/scss/`
+4. **Compile styles**: Run `npm run sass` after SCSS changes
+5. **Test responsiveness**: Use browser dev tools to test different screen sizes
+
+## 🧩 Components
+
+### Hero Component
+
+The Hero component is the main banner section featuring:
+
+- **Responsive video placeholder** (1280x720px → mobile optimized)
+- **Professional team imagery** with rounded corners
+- **Call-to-action button** with hover effects
+- **Mobile-optimized layout** with stacked content
+- **Accessibility features** with proper ARIA labels
+
+```jsx
+import Hero from 'components/Hero';
+
+// Usage
+<Hero />
+```
+
+#### Hero Component Features
+
+- ✅ **Fully responsive** across all device sizes
+- ✅ **Touch-optimized** for mobile devices
+- ✅ **SEO-friendly** with semantic HTML
+- ✅ **Performance optimized** with lazy loading
+- ✅ **Accessibility compliant** with ARIA attributes
+
+#### Mobile Breakpoints
+
+- **1200px+**: Desktop layout
+- **992px**: Tablet landscape
+- **768px**: Tablet portrait
+- **480px**: Mobile landscape  
+- **360px**: Small mobile devices
+
+### Other Components
+
+- **Header**: Navigation with responsive menu
+- **Footer**: Contact information and social links
+- **Services**: Service offerings display
+- **About**: Company information section
+
+## 🎨 Styling
+
+### SCSS Architecture
+
+The project uses a modular SCSS architecture:
+
+```scss
+// Main stylesheet imports
+src/assets/scss/style.scss
+
+// Theme variables
+src/assets/scss/_variables.scss
+src/assets/scss/_theme-colors.scss
+
+// Component-specific styles
+src/assets/scss/theme/_hero.scss
+src/assets/scss/theme/_buttons.scss
+src/assets/scss/theme/_navbar.scss
+```
+
+### Custom Variables
+
+Key SCSS variables can be customized in `_variables.scss`:
+
+```scss
+// Brand colors
+$primary: #1a73e8;
+$hero-title-color: #144070;
+$hero-btn-bg: #17416F;
+
+// Typography
+$font-family-sans-serif: 'Manrope', sans-serif;
+$hero-font-family: 'Kadwa', serif;
+
+// Spacing
+$spacer: 1rem;
+$hero-section-padding: 4.375rem 0;
+```
+
+### Responsive Design
+
+The template follows a mobile-first approach:
+
+```scss
+// Mobile first
+.component {
+  // Mobile styles (default)
+  
+  @media (min-width: 768px) {
+    // Tablet styles
+  }
+  
+  @media (min-width: 992px) {
+    // Desktop styles
+  }
+}
+```
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+```bash
+# Install Vercel CLI
+npm i -g vercel
+
+# Deploy
+vercel
+```
+
+### Netlify
+
+```bash
+# Build the project
+npm run build
+
+# Deploy the 'out' folder to Netlify
+```
+
+### Traditional Hosting
+
+```bash
+# Build for production
+npm run build
+
+# Upload the generated files to your hosting provider
+```
+
+## 📱 Browser Support
+
+- ✅ **Chrome** 90+
+- ✅ **Firefox** 88+
+- ✅ **Safari** 14+
+- ✅ **Edge** 90+
+- ✅ **Mobile browsers** (iOS Safari, Android Chrome)
+
+## 🔧 Customization
+
+### Changing Colors
+
+Edit `src/assets/scss/_theme-colors.scss`:
+
+```scss
+$blue: #your-color !default;
+$primary: $blue !default;
+```
+
+### Adding New Components
+
+1. Create component file: `src/components/YourComponent.jsx`
+2. Add styles: `src/assets/scss/theme/_your-component.scss`
+3. Import styles in: `src/assets/scss/theme/_theme.scss`
+4. Use component in pages
+
+### Modifying the Hero Section
+
+The Hero component can be customized by:
+
+- Updating images in the component
+- Modifying text content
+- Adjusting styles in `_hero.scss`
+- Changing responsive breakpoints
+
+## 🧪 Testing
+
+### Manual Testing Checklist
+
+- [ ] **Desktop responsiveness** (1200px+)
+- [ ] **Tablet responsiveness** (768px-1199px)
+- [ ] **Mobile responsiveness** (320px-767px)
+- [ ] **Touch interactions** on mobile devices
+- [ ] **Accessibility** with screen readers
+- [ ] **Performance** with Lighthouse
+- [ ] **Cross-browser compatibility**
+
+### Performance Optimization
+
+The template includes several performance optimizations:
+
+- **Image lazy loading**: `loading="lazy"` attributes
+- **Optimized fonts**: Preloaded web fonts
+- **Minified CSS**: Production builds
+- **Component code splitting**: Next.js automatic optimization
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/new-feature`
+3. Make changes and test thoroughly
+4. Commit changes: `git commit -m "Add new feature"`
+5. Push to branch: `git push origin feature/new-feature`
+6. Submit a pull request
+
+### Code Style Guidelines
+
+- Use **functional components** with hooks
+- Follow **JSX best practices**
+- Maintain **SCSS modularity**
+- Add **proper comments** for complex logic
+- Ensure **mobile responsiveness**
+- Include **accessibility attributes**
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🆘 Support
+
+- **Documentation**: This README and inline code comments
+- **Issues**: [GitHub Issues](https://github.com/your-username/buildify/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-username/buildify/discussions)
+
+## 🙏 Acknowledgments
+
+- **Bootstrap** team for the CSS framework
+- **Next.js** team for the React framework
+- **Sass** team for the CSS preprocessor
+- **Vercel** for hosting and deployment platform
+
+---
+
+**Built with ❤️ for the construction industry**
+
+For more templates and themes, visit [Themixly](https://themixly.com/)

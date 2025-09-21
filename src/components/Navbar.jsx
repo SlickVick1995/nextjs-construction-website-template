@@ -43,8 +43,8 @@ const Navbar = ({
           title={
             <Image
               unoptimized={true}
-              alt="Logo | Buildify"
-              src="/img/logo.webp"
+              alt="Logo | Swell"
+              src="/img/swell-logo.png"
               width={190}
               height={70}
             />
@@ -64,7 +64,7 @@ const Navbar = ({
             href="/"
             title={
               <Image
-                alt="Logo | Buildify"
+                alt="Logo | Swell"
                 src="/img/logo.webp"
                 width={160}
                 height={60}
@@ -90,13 +90,13 @@ const Navbar = ({
               <NextLink href="/" title="Home" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="About Us" className="nav-link" />
+              <NextLink href="#" title="Services" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Projects" className="nav-link" />
+              <NextLink href="#" title="About" className="nav-link" />
             </li>
             <li className="nav-item" data-bs-dismiss="offcanvas">
-              <NextLink href="#" title="Contact Us" className="nav-link" />
+              <NextLink href="#" title="Contact" className="nav-link" />
             </li>
           </ul>
 
@@ -106,7 +106,7 @@ const Navbar = ({
               <div className="d-flex align-items-center mb-5">
                 <i className="uil uil-envelope fs-32 text-main bg-white rounded-circle me-2" />
                 <p className="fs-16 text-center m-0">
-                  <a href="mailto:buildify@gmail.com">buildify@gmail.com</a>
+                  <a href="mailto:swell@gmail.com">swell@gmail.com</a>
                 </p>
               </div>
               <div className="d-flex mb-5">
@@ -152,7 +152,7 @@ const Navbar = ({
         {fancy ? (
           // Fancy container with background and layout tweaks
           <div className="container">
-            <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-end">
+            <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-end" style={{ padding: '10px 0' }}>
               {headerContent}
             </div>
           </div>
