@@ -187,3 +187,87 @@ h2 span {
 }
 
 .service-desc { font-size: 16px; color: #000; font-weight: 700; }
+
+/*==============================
+=      FIGMA NAVBAR DESIGN     =
+==============================*/
+.figma-navbar {
+  border-bottom: 1.5px solid #EEF0F3;
+  background: #FFF !important;
+  min-height: 94px;
+  padding: 20px 0;
+}
+
+.navbar-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu-left, .nav-menu-right {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.navbar-brand-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link-custom {
+  color: #242424 !important;
+  text-align: center;
+  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom.nav-link-bold {
+  font-family: 'Kadwa', serif;
+  font-weight: 700;
+}
+
+.nav-link-custom:hover {
+  color: #eba10e !important;
+}
+
+.icon-button {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  border-radius: 6px;
+  background: #F0F0F0;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background: #e0e0e0;
+}
+
+.icon-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+  .figma-navbar {
+    min-height: auto;
+    padding: 15px 0;
+  }
+}
