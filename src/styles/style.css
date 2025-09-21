@@ -63,13 +63,12 @@ a:hover,
   cursor: pointer !important;
 }
 .btn:hover {
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 /*==============================
 =        HEADING STYLE         =
 ==============================*/
-
 
 /* Section headings */
 section h1,
@@ -121,13 +120,17 @@ h2 span {
 
 /* Footer background */
 .footer-bg {
-  background: url('/img/bg-3.svg') no-repeat bottom left, #edf3ff;
+  background:
+    url('/img/bg-3.svg') no-repeat bottom left,
+    #edf3ff;
 }
 
 /* Background styles */
 .img-bg {
   background-image: url('/img/img-bg.webp'), url('/img/img-bg.webp');
-  background-position: left top, right bottom;
+  background-position:
+    left top,
+    right bottom;
   background-repeat: no-repeat, no-repeat;
   padding: 15px;
 }
@@ -136,7 +139,6 @@ h2 span {
   background-position: bottom right;
   background-repeat: no-repeat;
 }
-
 
 /*==============================
 =     WIDGET     =
@@ -157,7 +159,9 @@ h2 span {
 /*==============================
 =    SERVICES REDESIGN         =
 ==============================*/
-.kadwa-font { font-family: 'Kadwa', serif; }
+.kadwa-font {
+  font-family: 'Kadwa', serif;
+}
 
 .service-grid {
   display: grid;
@@ -166,12 +170,20 @@ h2 span {
 }
 
 @media (max-width: 991.98px) {
-  .service-grid { grid-template-columns: 1fr; }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-.service-item { max-width: 582px; }
+.service-item {
+  max-width: 582px;
+}
 
-.service-icon { font-size: 100px; color: #144070; line-height: 1; }
+.service-icon {
+  font-size: 100px;
+  color: #144070;
+  line-height: 1;
+}
 
 .service-title {
   margin: 12px 0;
@@ -184,10 +196,16 @@ h2 span {
   line-height: 1.2;
 }
 @media (max-width: 575.98px) {
-  .service-title { font-size: 26px; }
+  .service-title {
+    font-size: 26px;
+  }
 }
 
-.service-desc { font-size: 16px; color: #000; font-weight: 700; }
+.service-desc {
+  font-size: 16px;
+  color: #000;
+  font-weight: 700;
+}
 
 /*==============================
 =      FIGMA NAVBAR REDESIGN   =
@@ -196,8 +214,8 @@ h2 span {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border-bottom: 1.5px solid #EEF0F3;
-  background: #FFF !important;
+  border-bottom: 1.5px solid #eef0f3;
+  background: #fff !important;
   height: 94px;
   padding: 0 !important;
 }
@@ -257,7 +275,7 @@ h2 span {
   align-items: center;
   gap: 6px;
   border-radius: 6px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -287,7 +305,12 @@ h2 span {
 }
 
 .figma-nav-link-inter {
-  font-family: 'Inter', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family:
+    'Inter',
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
   font-weight: 400;
 }
 

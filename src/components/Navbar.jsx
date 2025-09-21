@@ -39,7 +39,13 @@ const Navbar = ({
         <div className="figma-left-buttons">
           <button className="figma-icon-button" aria-label="User profile">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66667C5.78261 12.5 4.93476 12.8512 4.30964 13.4763C3.68452 14.1014 3.33333 14.9493 3.33333 15.8333V17.5M13.3333 5.83333C13.3333 7.67428 11.8409 9.16667 10 9.16667C8.15905 9.16667 6.66667 7.67428 6.66667 5.83333C6.66667 3.99238 8.15905 2.5 10 2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path
+                d="M16.6667 17.5V15.8333C16.6667 14.9493 16.3155 14.1014 15.6904 13.4763C15.0652 12.8512 14.2174 12.5 13.3333 12.5H6.66667C5.78261 12.5 4.93476 12.8512 4.30964 13.4763C3.68452 14.1014 3.33333 14.9493 3.33333 15.8333V17.5M13.3333 5.83333C13.3333 7.67428 11.8409 9.16667 10 9.16667C8.15905 9.16667 6.66667 7.67428 6.66667 5.83333C6.66667 3.99238 8.15905 2.5 10 2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333Z"
+                stroke="#242424"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
         </div>
@@ -51,7 +57,7 @@ const Navbar = ({
             <NextLink href="#" className="figma-nav-link figma-nav-link-inter" title="About Us" />
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Services" />
           </div>
-          
+
           <div className="figma-menu-group-left">
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Clients" />
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Press" />
@@ -61,15 +67,7 @@ const Navbar = ({
           <div className="figma-logo-center">
             <NextLink
               href="/"
-              title={
-                <Image
-                  unoptimized={true}
-                  alt="Logo | Swell"
-                  src="/img/swell-logo.png"
-                  width={85}
-                  height={54}
-                />
-              }
+              title={<Image unoptimized={true} alt="Logo | Swell" src="/img/swell-logo.png" width={85} height={54} />}
             />
           </div>
 
@@ -78,7 +76,7 @@ const Navbar = ({
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Locations" />
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Franchise" />
           </div>
-          
+
           <div className="figma-menu-group-right">
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Shop" />
             <NextLink href="#" className="figma-nav-link figma-nav-link-kadwa" title="Get a Quote!" />
@@ -89,18 +87,20 @@ const Navbar = ({
         <div className="figma-right-buttons">
           <button className="figma-icon-button" aria-label="Search">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16.6695 16.6695L13.3764 13.3764M15.1005 9.21552C15.1005 12.4657 12.4657 15.1005 9.21552 15.1005C5.96535 15.1005 3.33057 12.4657 3.33057 9.21552C3.33057 5.96535 5.96535 3.33057 9.21552 3.33057C12.4657 3.33057 15.1005 5.96535 15.1005 9.21552Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path
+                d="M16.6695 16.6695L13.3764 13.3764M15.1005 9.21552C15.1005 12.4657 12.4657 15.1005 9.21552 15.1005C5.96535 15.1005 3.33057 12.4657 3.33057 9.21552C3.33057 5.96535 5.96535 3.33057 9.21552 3.33057C12.4657 3.33057 15.1005 5.96535 15.1005 9.21552Z"
+                stroke="#242424"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </button>
         </div>
       </div>
 
       {/* Mobile Navigation - Offcanvas */}
-      <div
-        id="offcanvas-nav"
-        data-bs-scroll="true"
-        className="navbar-collapse offcanvas offcanvas-nav offcanvas-start"
-      >
+      <div id="offcanvas-nav" data-bs-scroll="true" className="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
         <div className="offcanvas-header d-lg-none offcavas-bg">
           <NextLink
             href="/"
@@ -160,15 +160,7 @@ const Navbar = ({
       <div className="navbar-brand d-lg-none">
         <NextLink
           href="/"
-          title={
-            <Image
-              unoptimized={true}
-              alt="Logo | Swell"
-              src="/img/swell-logo.png"
-              width={120}
-              height={45}
-            />
-          }
+          title={<Image unoptimized={true} alt="Logo | Swell" src="/img/swell-logo.png" width={120} height={45} />}
         />
       </div>
     </Fragment>
@@ -185,9 +177,7 @@ const Navbar = ({
       )}
 
       <nav ref={navbarRef} className={`${sticky ? fixedClassName : navClassName} figma-navbar-redesign`}>
-        <div className="figma-navbar-wrapper">
-          {headerContent}
-        </div>
+        <div className="figma-navbar-wrapper">{headerContent}</div>
       </nav>
     </Fragment>
   );

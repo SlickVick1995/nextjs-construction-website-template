@@ -6,29 +6,29 @@ const services = [
     icon: 'uil-tachometer-fast-alt',
     title: 'FAST & TRANSPARENT ESTIMATES',
     description:
-      "Getting started is simple and straightforward. Reach out to us by phone or message, and we'll deliver a transparent estimate within one day. We'll also arrange a convenient property visit to explore the best cleaning solutions tailored to your needs.",
+      "Getting started is simple and straightforward. Reach out to us by phone or message, and we'll deliver a transparent estimate within one day. We'll also arrange a convenient property visit to explore the best cleaning solutions tailored to your needs."
   },
   {
     id: 2,
     icon: 'uil-shield-check',
     title: 'FULLY PROTECTED SERVICE',
     description:
-      "Your peace of mind is our priority. Our comprehensive insurance coverage includes $1MM per incident protection and $2MM total coverage, along with complete automotive and workers' compensation insurance.",
+      "Your peace of mind is our priority. Our comprehensive insurance coverage includes $1MM per incident protection and $2MM total coverage, along with complete automotive and workers' compensation insurance."
   },
   {
     id: 3,
     icon: 'uil-handshake',
     title: 'DEPENDABLE & PUNCTUAL',
     description:
-      "Getting started is simple and straightforward. Reach out to us by phone or message, and we'll deliver a transparent estimate within one day. We'll also arrange a convenient property visit to explore the best cleaning solutions tailored to your needs.",
+      "Getting started is simple and straightforward. Reach out to us by phone or message, and we'll deliver a transparent estimate within one day. We'll also arrange a convenient property visit to explore the best cleaning solutions tailored to your needs."
   },
   {
     id: 4,
     icon: 'uil-building',
     title: 'Honoring Your Business',
     description:
-      'We embrace the "elevate every environment we visit" mindset as our guiding standard. Attention to detail drives everything we do - from protective footwear upon arrival to meticulously cleaning window ledges and exercising thoughtful placement of all equipment including ladders and platforms.',
-  },
+      'We embrace the "elevate every environment we visit" mindset as our guiding standard. Attention to detail drives everything we do - from protective footwear upon arrival to meticulously cleaning window ledges and exercising thoughtful placement of all equipment including ladders and platforms.'
+  }
 ];
 
 const Services = () => {
