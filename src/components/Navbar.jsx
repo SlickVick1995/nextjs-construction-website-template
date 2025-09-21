@@ -75,16 +75,11 @@ const Navbar = ({
         {/* Right side navigation */}
         <div className="nav-right">
           <div className="nav-menu-right">
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Locations</NextLink>
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Franchise</NextLink>
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Shop</NextLink>
-            <NextLink href="#" className="nav-link-custom nav-link-bold">Get a Quote!</NextLink>
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Locations" />
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Franchise" />
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Shop" />
+            <NextLink href="#" className="nav-link-custom nav-link-bold" title="Get a Quote!" />
           </div>
-          <button className="icon-button ms-3" aria-label="Search">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-              <path d="M16.6695 16.6695L13.3764 13.3764M15.1005 9.21552C15.1005 12.4657 12.4657 15.1005 9.21552 15.1005C5.96535 15.1005 3.33057 12.4657 3.33057 9.21552C3.33057 5.96535 5.96535 3.33057 9.21552 3.33057C12.4657 3.33057 15.1005 5.96535 15.1005 9.21552Z" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </button>
         </div>
       </div>
 
