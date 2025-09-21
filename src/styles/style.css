@@ -196,7 +196,16 @@ h2 span {
   border-bottom: 1.5px solid #EEF0F3;
   background: #FFF !important;
   min-height: 94px;
-  padding: 20px 0;
+}
+
+/* Figma-specific inner container with exact padding */
+.figma-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center logo absolutely; groups use space-between */
+  gap: 32px;
+  padding: 20px 48px; /* exact from Figma */
 }
 
 .navbar-nav-container {
@@ -209,12 +218,13 @@ h2 span {
 .nav-left, .nav-right {
   display: flex;
   align-items: center;
+  gap: 32px; /* distance between icon and menu group */
 }
 
 .nav-menu-left, .nav-menu-right {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 48px; /* distance between menu items in a group */
 }
 
 .navbar-brand-center {
