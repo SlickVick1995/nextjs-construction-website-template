@@ -628,6 +628,7 @@ figure img {
     width: 100%;
     max-width: 100%;
     -webkit-mask-size: auto auto;
+    mask-size: auto auto;
   }
   &.mask-1 img {
     mask-image: url(/img/svg/blob.svg);

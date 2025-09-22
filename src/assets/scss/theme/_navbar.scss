@@ -244,15 +244,55 @@ button.hamburger {
   }
 
   .figma-logo {
+    width: 85px !important;
+    height: 54px !important;
+    object-fit: contain;
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .figma-center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .navbar-brand {
+    display: block !important;
+  }
+  
+  .figma-center-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    position: relative;
+  }
+  
+  .figma-logo-center {
     width: 85px;
     height: 54px;
-    object-fit: contain;
+    aspect-ratio: 85/54;
+  }
+  
+  .figma-logo-center img {
+    width: 85px;
+    height: 54px;
+  }
+  
+  .figma-menu-group-left,
+  .figma-menu-group-right {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
   }
 
-  // Hide figma navbar on mobile
+  // Adjust figma navbar on mobile
   @media (max-width: 991.98px) {
     .figma-navbar-wrapper {
-      display: none;
+      flex-direction: column;
+      height: auto;
+      padding: 10px 0;
     }
 
     // Ensure mobile navbar styling remains consistent
@@ -263,6 +303,17 @@ button.hamburger {
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    
+    .figma-center-container {
+      margin: 10px 0;
+    }
+    
+    .figma-menu-group-left,
+    .figma-menu-group-right {
+      width: 100%;
+      justify-content: center;
+      margin: 5px 0;
     }
   }
 
